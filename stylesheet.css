@@ -1,0 +1,264 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  display: grid;
+  height: 100%;
+  place-items:center;
+  background: #03a9f4;
+  overflow : hidden;
+
+}
+
+
+@media only screen and (max-device-width: 400px)
+{
+ .buttons {width: 200%; font-size: 4.25em;}
+}
+
+
+
+
+
+button{
+  position:relative;
+  height: 60px;
+  width : 200px;
+  margin: 0 10px;
+  border-radius: 90px;
+  border : none;
+  outline: none;
+background: #111;
+color:#fff;
+font-size: 20px;
+letter-spacing: 2px;
+text-transform: uppercase;
+cursor: pointer;
+}
+
+
+
+
+
+button:first-child:hover{
+background: linear-gradient(90deg,#03a9f4, #f441a5, #ffeb3b, #03a9f4);
+background-size: 100%;
+}
+button:last-child:hover{
+background: linear-gradient(90deg, #fa7199, #f5ce62, #e43603, #fa7199);
+background-size: 100%;
+}
+
+button:first-child:before,
+button:last-child:before{
+content: '';
+position: absolute;
+background: inherit;
+top: -5px;
+right: -5px;
+bottom: -5px;
+left: -5px;
+border-radius: 50px;
+filter: blur(20px);
+opacity: 0;
+transition: opacity 0.5s;
+position: relative;
+}
+
+button:first-child:hover:before,
+button:last-child:hover:before{
+  opacity: 1;
+  z-index: -1;
+}
+button:hover{
+  z-index: 1;
+  animation: glow 8s linear infinite;
+}
+@@keyframes glow {
+  0%{
+    background-position: 0%;
+  }
+  100%{
+    background-position: 400%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+.logo { font: 400 1em/1.5 "Neuton";
+background: #090d00;
+color: rgba(0,0,0);
+text-align: center;
+margin: 0 }
+
+p {
+	text-transform: uppercase;
+	letter-spacing: .5em;
+	display: inline-block;
+	border: 4px double rgba(0,0,0);
+	border-width: 4px 0;
+	padding: 1.5em 0em;
+	position: absolute;
+	top: 18%;
+	left: 50%;
+	width: 40em;
+	margin: 0 0 0 -20em;
+	font-family: arial;
+}
+
+  span {
+
+  	font: 700 4em/1 "Oswald", sans-serif;
+  	letter-spacing: 0;
+  	padding: .25em 0 .325em;
+	  display: block;
+	  margin: 0 auto;
+  	text-shadow: 0 0 80px rgba(255,255,255,.5);
+	  background: url('http://f.cl.ly/items/010q3E1u3p2Q0j1L1S1o/animated_text_fill.png') repeat-y;
+	  -webkit-background-clip: text;
+	  background-clip: text;
+	  -webkit-text-fill-color: transparent;
+	  -webkit-animation: aitf 80s linear infinite;
+	  -webkit-transform: translate3d(0,0,0);
+	  -webkit-backface-visibility: hidden;
+  }
+
+
+@-webkit-keyframes aitf {
+	0% { background-position: 0% 50%; }
+	100% { background-position: 100% 50%; }
+}
+
+}
+
+
+
+
+
+button{
+  position:relative;
+  height: 60px;
+  width : 200px;
+  margin: 0 10px;
+  border-radius: 50px;
+  border : none;
+  outline: none;
+background: #111;
+color:#fff;
+font-size: 10px;
+letter-spacing: 2px;
+text-transform: uppercase;
+cursor: pointer;
+}
+
+
+
+
+
+button:first-child:hover{
+background: linear-gradient(90deg,#03a9f4, #f441a5, #ffeb3b, #03a9f4);
+background-size: 100%;
+}
+button:last-child:hover{
+background: linear-gradient(90deg, #fa7199, #f5ce62, #e43603, #fa7199);
+background-size: 100%;
+}
+
+button:first-child:before,
+button:last-child:before{
+content: '';
+position: absolute;
+background: inherit;
+top: -5px;
+right: -5px;
+bottom: -5px;
+left: -5px;
+border-radius: 50px;
+filter: blur(20px);
+opacity: 0;
+transition: opacity 0.5s;
+position: relative;
+}
+
+button:first-child:hover:before,
+button:last-child:hover:before{
+  opacity: 1;
+  z-index: -1;
+}
+button:hover{
+  z-index: 1;
+  animation: glow 8s linear infinite;
+}
+@@keyframes glow {
+  0%{
+    background-position: 0%;
+  }
+  100%{
+    background-position: 400%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+.logo { font: 400 1em/1.5 "Neuton";
+background: #090d00;
+color: rgba(0,0,0);
+text-align: center;
+margin: 0 }
+
+p {
+	text-transform: uppercase;
+	letter-spacing: .5em;
+	display: inline-block;
+	border: 4px double rgba(0,0,0);
+	border-width: 4px 0;
+	padding: 1.5em 0em;
+	position: absolute;
+	top: 18%;
+	left: 50%;
+	width: 40em;
+	margin: 0 0 0 -20em;
+	font-family: arial;
+}
+
+  span {
+
+  	font: 700 4em/1 "Oswald", sans-serif;
+  	letter-spacing: 0;
+  	padding: .25em 0 .325em;
+	  display: block;
+	  margin: 0 auto;
+  	text-shadow: 0 0 80px rgba(255,255,255,.5);
+	  background: url('http://f.cl.ly/items/010q3E1u3p2Q0j1L1S1o/animated_text_fill.png') repeat-y;
+	  -webkit-background-clip: text;
+	  background-clip: text;
+	  -webkit-text-fill-color: transparent;
+	  -webkit-animation: aitf 80s linear infinite;
+	  -webkit-transform: translate3d(0,0,0);
+	  -webkit-backface-visibility: hidden;
+  }
+
+
+@-webkit-keyframes aitf {
+	0% { background-position: 0% 50%; }
+	100% { background-position: 100% 50%; }
+}
