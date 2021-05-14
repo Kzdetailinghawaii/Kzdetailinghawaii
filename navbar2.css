@@ -68,7 +68,7 @@ a:hover {
   cursor:pointer;
 }
 .bars {
-  background:#999;
+  background:#fff;
   display: inline-block;
   height: 2px;
   position: relative;
@@ -77,7 +77,7 @@ a:hover {
 }
 .bars:before,
 .bars:after {
-  background: #999;
+  background: #fff;
   content: '';
   display: block;
   height: 100%;
